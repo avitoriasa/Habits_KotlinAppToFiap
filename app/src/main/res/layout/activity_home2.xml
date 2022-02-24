@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <View
+        android:id="@+id/home_background"
+        android:layout_width="420dp"
+        android:layout_height="800dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/home_background"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="211dp"
+        android:layout_height="66dp"
+        android:text="Pequenas escolhas
+                       mudam o mundo"
+        android:textColor="#102948"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp" />
+
+    <View
+        android:id="@+id/rectangle_search"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/rectangle_search" />
+
+    <SearchView
+        android:id="@+id/search_button"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="117dp"
+        android:searchIcon="@drawable/ic_search"
+        android:background="@drawable/search" />
+
+    <EditText
+        android:id="@+id/pesquisa"
+        android:layout_width="143dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:hint="pesquise por assuntos"
+        android:textColor="#6FCF97"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="191dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="Mude seus hábitos!"
+        android:textColor="#0C0636"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_vermais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="180dp"
+        android:background="none"
+        android:text="Ver mais"
+        android:textColor="#095169"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_search" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_rectanglehome"
+            app:itemIconTint="#29D799"
+            app:itemTextColor="#29D799"
+            app:menu="@menu/nav_menu"/>
+
+</RelativeLayout>
