@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToOutline="true"
+        android:background="@drawable/background_gradient"
+        />
+
+    <View
+        android:layout_width="332dp"
+        android:layout_height="397dp"
+        android:background="#0C0636"
+        android:foregroundGravity="center"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <TextView
+        android:id="@+id/mensagem_login"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:text="preencha conforme os dados da sua empresa:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <EditText
+        android:id="@+id/input_login1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="digite sua funcional"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem_login"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <EditText
+        android:id="@+id/input_login2"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="digite o seu e-mail"
+        android:textColorHint="#80FFFFFF"
+        android:autofillHints="emailAddress"
+        app:layout_constraintStart_toStartOf="@+id/input_login1"
+        app:layout_constraintTop_toBottomOf="@+id/input_login1" />
+
+    <EditText
+        android:id="@+id/input_login3"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="digite sua senha"
+        android:textColorHint="#80FFFFFF"
+        android:autofillHints="password"
+        app:layout_constraintStart_toStartOf="@+id/input_login2"
+        app:layout_constraintTop_toBottomOf="@+id/input_login2" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="onLogin"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/input_login3"
+        app:layout_constraintStart_toStartOf="@+id/input_login3"
+        app:layout_constraintTop_toBottomOf="@+id/input_login3"
+        android:background="@drawable/btn_login"
+        android:elevation="2dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
