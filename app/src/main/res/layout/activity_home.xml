@@ -24,6 +24,7 @@
         tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="74dp" />
 
+
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
@@ -31,18 +32,21 @@
         android:text="mudam o mundo"
         android:textColor="#102948"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/text1"
-        tools:layout_editor_absoluteX="36dp" />
-
+        app:layout_constraintEnd_toEndOf="@+id/text1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <View
         android:id="@+id/rectangle_search"
         android:layout_width="331dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/rectangle_search"
-        app:layout_constraintTop_toBottomOf="@id/text2"
-        tools:layout_editor_absoluteX="36dp" />
+        app:layout_constraintEnd_toEndOf="@+id/text2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
 
     <SearchView
         android:id="@+id/search_button"
@@ -57,24 +61,44 @@
         android:id="@+id/pesquisa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:hint="pesquise por assuntos"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="120dp"
         android:gravity="top"
-        android:textSize="14sp"
+        android:hint="pesquise por assuntos"
         android:textColor="#6FCF97"
-        app:layout_constraintTop_toBottomOf="@id/text2"
-        tools:layout_editor_absoluteX="48dp" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/search_button"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
         android:text="Mude seus hábitos"
         android:textColor="#0C0636"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/rectangle_search"
-        tools:layout_editor_absoluteX="36dp" />
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_search"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_search"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_search" />
 
+    <Button
+        android:id="@+id/btn_vermais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:background="none"
+        android:text="Ver mais"
+        android:textSize="12sp"
+        android:textColor="#095169"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_search" />
 
+        <ViewFlipper
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
