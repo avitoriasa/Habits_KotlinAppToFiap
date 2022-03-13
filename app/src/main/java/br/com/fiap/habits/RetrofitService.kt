@@ -1,5 +1,6 @@
 package br.com.fiap.habits
 
+import CEP
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
