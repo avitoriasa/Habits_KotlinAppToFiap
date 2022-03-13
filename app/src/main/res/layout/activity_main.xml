@@ -17,7 +17,7 @@
 
     <View
         android:layout_width="332dp"
-        android:layout_height="397dp"
+        android:layout_height="334dp"
         android:background="#0C0636"
         android:foregroundGravity="center"
         tools:layout_editor_absoluteX="39dp"
@@ -36,18 +36,6 @@
         tools:layout_editor_absoluteY="193dp" />
 
     <EditText
-        android:id="@+id/input_login1"
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:hint="digite sua funcional"
-        android:textColorHint="#80FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/mensagem_login"
-        tools:layout_editor_absoluteX="50dp" />
-
-    <EditText
         android:id="@+id/input_login2"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
@@ -56,8 +44,8 @@
         android:hint="digite o seu e-mail"
         android:textColorHint="#80FFFFFF"
         android:autofillHints="emailAddress"
-        app:layout_constraintStart_toStartOf="@+id/input_login1"
-        app:layout_constraintTop_toBottomOf="@+id/input_login1" />
+        app:layout_constraintStart_toStartOf="@+id/mensagem_login"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem_login" />
 
     <EditText
         android:id="@+id/input_login3"
